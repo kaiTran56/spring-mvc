@@ -14,7 +14,7 @@ public class HomeController {
 	@Autowired
 	private HomeService homeService;
 
-	@RequestMapping(value = "/homepage", method = RequestMethod.GET)
+	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
 		ModelAndView mav = new ModelAndView("homepage");
 		// Normal Menu
