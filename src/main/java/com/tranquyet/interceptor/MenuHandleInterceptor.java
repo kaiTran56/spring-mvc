@@ -17,7 +17,7 @@ public class MenuHandleInterceptor implements HandlerInterceptor {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 
-		request.setAttribute("menu-interceptor", homeService.loadMenuInterceptor());
+		request.setAttribute("menuInterceptor", homeService.loadMenuInterceptor());
 
 		return true;
 	}

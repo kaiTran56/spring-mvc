@@ -20,7 +20,7 @@
 	<br>
 	<h2 style="color: green;">This menu is an interceptor</h2>
 
-	<%@include file="header/menu-interceptor.jsp"%>
+	<%@include file="header/menuinterceptor.jsp"%>
 </body>
 
 </html>

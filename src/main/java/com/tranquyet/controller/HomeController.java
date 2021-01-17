@@ -30,9 +30,10 @@ public class HomeController {
 		return mav;
 	}
 
+	@RequestMapping(value = "/spring-word", method = RequestMethod.GET)
 	public ModelAndView springWorld() {
-		ModelAndView mav = new ModelAndView("spring-world-interceptor");
-		
+		ModelAndView mav = new ModelAndView("springworld");
+		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
 
