@@ -21,6 +21,7 @@ public class HomeServiceImpl implements HomeService {
 		List<String> menuInterceptor = new ArrayList<String>();
 		menuInterceptor.add("Tran Quyet-International");
 		menuInterceptor.add("Bui Quynh-VietNam");
+		menuInterceptor.add("Do Ngan-VietNam");
 		return menuInterceptor;
 	}
 

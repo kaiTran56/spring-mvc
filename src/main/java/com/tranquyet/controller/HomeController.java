@@ -22,7 +22,7 @@ public class HomeController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/springmvc", method = RequestMethod.GET)
+	@RequestMapping(value = "/spring-mvc", method = RequestMethod.GET)
 	public ModelAndView springMVCPage() {
 		ModelAndView mav = new ModelAndView("springmvc");
 		// Normal Menu
@@ -30,11 +30,15 @@ public class HomeController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/spring-word", method = RequestMethod.GET)
-	public ModelAndView springWorld() {
+	@RequestMapping(value = "spring-test", method = RequestMethod.GET)
+	public ModelAndView testURL() {
 		ModelAndView mav = new ModelAndView("springworld");
-		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
 
+	@RequestMapping(value = "/springworld", method = RequestMethod.GET)
+	public ModelAndView springMVC() {
+		ModelAndView mav = new ModelAndView("springworld");
+		return mav;
+	}
 }
