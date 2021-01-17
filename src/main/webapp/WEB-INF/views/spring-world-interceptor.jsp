@@ -13,11 +13,9 @@
 </head>
 
 <body>
-	<h1>Homepage</h1>
+	<h1>Spring World Interceptor</h1>
 	<h1>Menu</h1>
-	<h2 style="color: red;">This menu is Normal</h2>
-	<%@include file="header/menu.jsp"%>
-	<br>
+
 	<h2 style="color: green;">This menu is an interceptor</h2>
 
 	<%@include file="header/menu-interceptor.jsp"%>

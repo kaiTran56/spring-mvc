@@ -15,7 +15,11 @@
 <body>
 	<h1>Spring-MVC</h1>
 	<h1>Menu</h1>
+	<h2 style="coler: red;">This menu is Normal</h2>
 	<%@include file="header/menu.jsp"%>
+	<br>
+	<h2 style="color: green;">This menu is an Interceptor</h2>
+	<%@include file="header/menu-interceptor.jsp"%>
 </body>
 
 </html>

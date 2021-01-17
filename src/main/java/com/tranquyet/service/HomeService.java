@@ -6,4 +6,6 @@ public interface HomeService {
 	
 	List<String> loadMenu();
 	
+	List<String> loadMenuInterceptor();
+		
 }

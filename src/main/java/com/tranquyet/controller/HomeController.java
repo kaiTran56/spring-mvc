@@ -17,6 +17,7 @@ public class HomeController {
 	@RequestMapping(value = "/homepage", method = RequestMethod.GET)
 	public ModelAndView homePage() {
 		ModelAndView mav = new ModelAndView("homepage");
+		// Normal Menu
 		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
@@ -24,7 +25,15 @@ public class HomeController {
 	@RequestMapping(value = "/springmvc", method = RequestMethod.GET)
 	public ModelAndView springMVCPage() {
 		ModelAndView mav = new ModelAndView("springmvc");
+		// Normal Menu
 		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
+
+	public ModelAndView springWorld() {
+		ModelAndView mav = new ModelAndView("spring-world-interceptor");
+		
+		return mav;
+	}
+
 }

@@ -17,4 +17,11 @@ public class HomeServiceImpl implements HomeService {
 		return menu;
 	}
 
+	public List<String> loadMenuInterceptor() {
+		List<String> menuInterceptor = new ArrayList<String>();
+		menuInterceptor.add("Tran Quyet-International");
+		menuInterceptor.add("Bui Quynh-VietNam");
+		return menuInterceptor;
+	}
+
 }
