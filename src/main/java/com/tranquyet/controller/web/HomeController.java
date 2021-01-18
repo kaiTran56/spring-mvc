@@ -16,14 +16,14 @@ public class HomeController {
 
 	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
-		ModelAndView mav = new ModelAndView("home");
+		ModelAndView mav = new ModelAndView("web/home");
 
 		return mav;
 	}
 
 	@RequestMapping(value = "/spring-mvc", method = RequestMethod.GET)
 	public ModelAndView springMVCPage() {
-		ModelAndView mav = new ModelAndView("springmvc");
+		ModelAndView mav = new ModelAndView("view/home");
 		// Normal Menu
 		mav.addObject("menu", homeService.loadMenu());
 		return mav;
