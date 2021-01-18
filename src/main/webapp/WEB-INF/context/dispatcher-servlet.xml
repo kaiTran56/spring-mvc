@@ -40,5 +40,9 @@
 		<bean class="com.tranquyet.interceptor.MenuHandleInterceptor" />
 	</mvc:interceptors>
 
+	<mvc:resources location="/template/"
+		mapping="/template/**" />
+
+
 
 </beans>

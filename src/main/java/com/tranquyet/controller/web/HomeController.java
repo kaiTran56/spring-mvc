@@ -1,4 +1,4 @@
-package com.tranquyet.controller;
+package com.tranquyet.controller.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,9 +16,8 @@ public class HomeController {
 
 	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
-		ModelAndView mav = new ModelAndView("homepage");
-		// Normal Menu
-		mav.addObject("menu", homeService.loadMenu());
+		ModelAndView mav = new ModelAndView("home");
+
 		return mav;
 	}
 
