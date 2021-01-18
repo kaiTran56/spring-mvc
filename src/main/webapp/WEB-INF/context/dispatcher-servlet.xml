@@ -34,6 +34,8 @@
 
 	</bean>
 
+
+	<!-- Use for interceptor in Spring mvc -->
 	<mvc:interceptors>
 		<bean class="com.tranquyet.interceptor.MenuHandleInterceptor" />
 	</mvc:interceptors>
