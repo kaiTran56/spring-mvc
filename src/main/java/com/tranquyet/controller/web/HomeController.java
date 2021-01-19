@@ -21,9 +21,9 @@ public class HomeController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/spring-mvc", method = RequestMethod.GET)
+	@RequestMapping(value = "/trang-chu/springmvc", method = RequestMethod.GET)
 	public ModelAndView springMVCPage() {
-		ModelAndView mav = new ModelAndView("view/home");
+		ModelAndView mav = new ModelAndView("web/homepage");
 		// Normal Menu
 		mav.addObject("menu", homeService.loadMenu());
 		return mav;
