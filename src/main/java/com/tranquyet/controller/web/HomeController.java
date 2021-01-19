@@ -31,7 +31,7 @@ public class HomeController {
 
 	@RequestMapping(value = "spring-test", method = RequestMethod.GET)
 	public ModelAndView testURL() {
-		ModelAndView mav = new ModelAndView("springworld");
+		ModelAndView mav = new ModelAndView("web/homepage");
 		return mav;
 	}
 
