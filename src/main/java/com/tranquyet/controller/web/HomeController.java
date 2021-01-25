@@ -21,7 +21,7 @@ public class HomeController {
 		return mav;
 	}
 
-	@RequestMapping(value = "/trang-chu/springmvc", method = RequestMethod.GET)
+	@RequestMapping(value = "/springmvc", method = RequestMethod.GET)
 	public ModelAndView springMVCPage() {
 		ModelAndView mav = new ModelAndView("web/homepage");
 		// Normal Menu
@@ -37,6 +37,12 @@ public class HomeController {
 
 	@RequestMapping(value = "/springworld", method = RequestMethod.GET)
 	public ModelAndView springMVC() {
+		ModelAndView mav = new ModelAndView("springworld");
+		return mav;
+	}
+
+	@RequestMapping(value = "/springhome", method = RequestMethod.GET)
+	public ModelAndView springHome() {
 		ModelAndView mav = new ModelAndView("springworld");
 		return mav;
 	}

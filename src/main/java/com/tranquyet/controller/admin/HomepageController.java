@@ -10,13 +10,13 @@ public class HomepageController {
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public ModelAndView goHomepage() {
-		ModelAndView mav = new ModelAndView("admin/home");
+		ModelAndView mav = new ModelAndView("admin/homeworld");
 		return mav;
 	}
-
+	
 	@RequestMapping(value = "/home/admin", method = RequestMethod.GET)
 	public ModelAndView goAdmin() {
-		ModelAndView mav = new ModelAndView("web/homepage");
+		ModelAndView mav = new ModelAndView("admin/home");
 		return mav;
 	}
 

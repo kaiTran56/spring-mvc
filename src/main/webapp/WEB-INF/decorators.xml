@@ -7,7 +7,7 @@
 	</decorator>
 
 	<decorator name="home" page="admin.jsp">
-		<pattern>/home</pattern>
+		<pattern>/home*</pattern>
 	</decorator>
 
 </decorators>
